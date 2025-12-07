@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KunKicks - Rólunk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <!-- YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">KunKicks</a>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="catalog.html">Katalógus</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="cart.html">Kosár (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html" class="btn">Pénztár</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Rólunk</h1>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                A KunKicks egy szenvedélyből született vállalkozás. Célunk, hogy a legkülönlegesebb cipőket eljuttassuk
+                a magyar sneakerheadekhez.
+            </p>
+
+            <div style="display: flex; gap: 2rem; align-items: start;">
+                <div style="flex: 1;">
+                    <!-- Requirement: Numbered List -->
+                    <h3>Történetünk lépései</h3>
+                    <ol>
+                        <li>2010: Az ötlet megszületése egy kis garázsban.</li>
+                        <li>2012: Első webshop megnyitása.</li>
+                        <li>2015: Fizikai üzlet nyitása Budapesten.</li>
+                        <li>2020: Nemzetközi terjeszkedés.</li>
+                        <li>2024: Magyarország vezető sneaker forgalmazója.</li>
+                    </ol>
+                </div>
+
+                <div style="flex: 1;">
+                    <!-- Requirement: Video with custom JS controls -->
+                    <h3>Nézd meg bemutatkozó videónkat!</h3>
+                    <div class="video-container">
+                        <div id="player"></div>
+                    </div>
+                    <div class="video-controls">
+                        <button onclick="playVideo()" class="btn">Lejátszás</button>
+                        <button onclick="pauseVideo()" class="btn"
+                            style="background-color: var(--secondary-color);">Szünet</button>
+                        <button onclick="stopVideo()" class="btn" style="background-color: #e74c3c;">Megállítás</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside style="background: #e1f5fe; padding: 2rem; margin-top: 3rem; border-radius: 10px;">
+            <h3>Hírek</h3>
+            <p>Iratkozz fel hírlevelünkre, hogy ne maradj le az új megjelenésekről!</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KunKicks Cipőbolt. Minden jog fenntartva.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KunKicks - Katalógus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <style>
+        /* Requirement: Internal CSS styling */
+        .catalog-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">KunKicks</a>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="catalog.html">Katalógus</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="cart.html">Kosár (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html" class="btn">Pénztár</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-header">
+            <h1>Termékeink</h1>
+            <p>Válogass prémium cipőink közül!</p>
+        </section>
+
+        <!-- Requirement: Table formatting representation of some data -->
+        <section>
+            <h2>Mérettáblázat</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>EU Méret</th>
+                        <th>US Méret</th>
+                        <th>UK Méret</th>
+                        <th>CM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>40</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>8.5</td>
+                        <td>7.5</td>
+                        <td>26.5</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>9.5</td>
+                        <td>8.5</td>
+                        <td>27.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="product-container" class="product-grid">
+            <!-- AJAX content will be loaded here -->
+            <p>Termékek betöltése...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KunKicks Cipőbolt. Minden jog fenntartva.</p>
+    </footer>
+</body>
+
+</html>

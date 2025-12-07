@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Nike Air Max 90",
+        "price": 45000,
+        "category": "Utcai",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "description": "Klasszikus kényelem és stílus."
+    },
+    {
+        "id": 2,
+        "name": "Adidas Ultraboost",
+        "price": 55000,
+        "category": "Futás",
+        "image": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "description": "Maximális energiavisszanyerés minden lépésnél."
+    },
+    {
+        "id": 3,
+        "name": "Puma RS-X",
+        "price": 35000,
+        "category": "Utcai",
+        "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "description": "Merész dizájn és kivételes párnázottság."
+    },
+    {
+        "id": 4,
+        "name": "Timberland Premium",
+        "price": 60000,
+        "category": "Bakancs",
+        "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "description": "Vízálló és strapabíró, minden időjárásra."
+    },
+    {
+        "id": 5,
+        "name": "Vans Old Skool",
+        "price": 25000,
+        "category": "Skate",
+        "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "description": "Az ikonikus gördeszkás cipő."
+    },
+    {
+        "id": 6,
+        "name": "Converse Chuck Taylor",
+        "price": 22000,
+        "category": "Utcai",
+        "image": "https://images.unsplash.com/photo-1494496195158-c31bda38002f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "description": "Stílusos és időtlen klasszikus."
+    }
+]

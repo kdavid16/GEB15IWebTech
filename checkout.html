@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KunKicks - Pénztár</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/validation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">KunKicks</a>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="catalog.html">Katalógus</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="cart.html">Kosár (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html" class="btn">Pénztár</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kosár összegzése és Fizetés</h1>
+
+        <form id="checkout-form" method="post" action="#">
+            <h2>Szállítási Adatok</h2>
+
+            <!-- Requirement: Text field (one line) -->
+            <div class="form-group">
+                <label for="name">Teljes név:</label>
+                <input type="text" id="name" name="name" placeholder="Pl. Kiss János">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" name="email" placeholder="janos@email.com">
+            </div>
+
+            <!-- Requirement: Text field (multi line) -->
+            <div class="form-group">
+                <label for="address">Szállítási cím:</label>
+                <textarea id="address" name="address" rows="3"
+                    placeholder="Irányítószám, Város, Utca, Házszám"></textarea>
+            </div>
+
+            <!-- Requirement: Datalist -->
+            <div class="form-group">
+                <label for="city">Város (Datalist példa):</label>
+                <input list="cities" id="city" name="city">
+                <datalist id="cities">
+                    <option value="Budapest">
+                    <option value="Debrecen">
+                    <option value="Szeged">
+                    <option value="Miskolc">
+                    <option value="Pécs">
+                </datalist>
+            </div>
+
+            <!-- Requirement: Date selection -->
+            <div class="form-group">
+                <label for="delivery-date">Kért szállítási nap:</label>
+                <input type="date" id="delivery-date" name="delivery-date">
+            </div>
+
+            <!-- Requirement: Color selection (fun extra) -->
+            <div class="form-group">
+                <label for="packaging-color">Díszcsomagolás színe (opcionális):</label>
+                <input type="color" id="packaging-color" name="packaging-color" value="#ff4757">
+            </div>
+
+            <h2>Fizetési Mód</h2>
+
+            <!-- Requirement: Radio button -->
+            <div class="form-group radio-group">
+                <div style="margin-bottom: 0.5rem;">
+                    <input type="radio" id="card" name="payment" value="card">
+                    <label for="card" style="display:inline;">Bankkártya</label>
+                </div>
+                <div>
+                    <input type="radio" id="cod" name="payment" value="cod">
+                    <label for="cod" style="display:inline;">Utánvét</label>
+                </div>
+            </div>
+
+            <!-- Requirement: Checkbox -->
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms" style="display:inline;">Elfogadom az általános szerződési feltételeket és az
+                    adatkezelési tájékoztatót.</label>
+            </div>
+
+            <button type="submit" id="checkout-submit" class="btn">Rendelés Leadása</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KunKicks Cipőbolt. Minden jog fenntartva.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KunKicks - Kosár</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">KunKicks</a>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="catalog.html">Katalógus</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="cart.html">Kosár (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html" class="btn">Pénztár</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kosarad tartamla</h1>
+
+        <div class="cart-container"
+            style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow);">
+            <!-- Static example content for functionality demo -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Termék</th>
+                        <th>Méret</th>
+                        <th>Ár</th>
+                        <th>Törlés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nike Air Max 90</td>
+                        <td>42</td>
+                        <td>45 000 Ft</td>
+                        <td><button style="background:none; border:none; color:red; cursor:pointer;">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Adidas Ultraboost</td>
+                        <td>43</td>
+                        <td>55 000 Ft</td>
+                        <td><button style="background:none; border:none; color:red; cursor:pointer;">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="cart-total">
+                Összesen: 100 000 Ft
+            </div>
+
+            <div style="text-align: right; margin-top: 2rem;">
+                <a href="catalog.html" class="btn"
+                    style="background-color: var(--secondary-color); margin-right: 1rem;">Vásárlás folytatása</a>
+                <a href="checkout.html" class="btn">Tovább a pénztárhoz</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KunKicks Cipőbolt. Minden jog fenntartva.</p>
+    </footer>
+</body>
+
+</html>
